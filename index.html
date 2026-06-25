@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirius | Shop Your Style</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* اللون البيج المستوحى من اللوجو */
+            background-color: #e5dcd3; 
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-image: url('photo_5852438621149925114_y.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            text-align: center;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            width: 100%;
+        }
+        .logo-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid rgba(255,255,255,0.85);
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header h1,
+        .hero-content h1 {
+            margin: 10px 0;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            letter-spacing: 2px;
+        }
+        header p,
+        .hero-content p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: bold;
+            color: #f7e7c7;
+        }
+        .section {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.85); /* شفافية لتعطي شكل فخم */
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #1a1a1a;
+            color: #d4af37; /* لون ذهبي */
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <div class="logo-container">
+            <img src="photo_5852438621149925114_y.jpg" alt="Sirius Logo">
+        </div>
+        <h1>Sirius Store</h1>
+        <p>توصيل أسرع، سعر أرخص</p>
+    </div>
+</header>
+
+<div class="section">
+    <h2>أحدث المنتجات</h2>
+    <div class="product-list">
+        <div class="product-card">
+            <h3>سماعة Anker ANC</h3>
+            <p>السعر: 500 ج.م</p>
+            <button onclick="alert('تم الطلب!')">طلب الآن</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
